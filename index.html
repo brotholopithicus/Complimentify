@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Random Quote Generator</title>
+        <link href='https://fonts.googleapis.com/css?family=Lobster|Kaushan+Script|Montserrat|Crete+Round' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="./vendor/styles/semantic.min.css">
+        <link rel="stylesheet" href="./vendor/styles/animate.min.css">
+        <link rel="stylesheet" href="src/css/loading.css">
+        <link rel="stylesheet" href="src/css/main.css">
+    </head>
+    <body>
+        <div class="ui middle aligned center aligned grid">
+            <div class="column" id="mainContent">
+                <h2 class="ui teal image header">
+                    <div class="ui huge message">
+                        <div class="header" id="output"></div>
+                        <div class="ui horizontal divider">
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <p id="quote-author"></p>
+                        <div class="positive ui fluid large teal submit button" onclick="" id="getNewButton">Tell Me I'm Beautiful!</div>
+                    </div>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Insert this line above script imports  -->
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+
+    <!-- normal script imports etc  -->
+    <script src="./vendor/scripts/jquery-2.2.4.min.js"></script>
+    <script src="./vendor/scripts/semantic.min.js"></script>
+    <script src="app.bundle.js"></script>
+    
+    <!-- Insert this line after script imports -->
+    <script>
+        if (window.module)
+            module = window.module;
+    </script>
+</body>
+</html>
